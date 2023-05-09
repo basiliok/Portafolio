@@ -1,0 +1,12 @@
+.titulo{
+    width: 200px;
+    margin: 80px auto;
+}
+.frase{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+.carita{
+    color: #6db33f;
+}
