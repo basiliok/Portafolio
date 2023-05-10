@@ -1,12 +1,73 @@
-.titulo{
-    width: 200px;
-    margin: 80px auto;
+/* si es clase [.] si es una etiqueta de html & */
+.main_portafolio{
+    width: 100%;
+    padding: 35px;
+    margin: 80px auto 0;
 }
-.frase{
-    width: 200px;
-    margin: auto;
-    text-align: center;
+.superior{
+    .saludo{
+        .saludo_inicial{
+            color: var(--verde) ;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        .nombre{
+            font-size: clamp(2.5rem, 4.5vw, 5rem);
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .titulo{
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            font-weight: 600;
+        }
+    }
 }
-.carita{
-    color: #6db33f;
+
+.descripcion{
+    & span{
+        color: var(--verde);
+    }
+}
+
+.proyectos{
+    .cajon{
+        background-color: rgba(255,255,255,0.05);
+        border-radius: 4px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        /*box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.05);*/
+        opacity: 1;
+    }
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .tecnologias{
+        color: var(--verde);
+    }
+}
+
+
+
+@media (min-width: 650px){
+    .main_portafolio{
+        width: 600px;
+    }
+}
+@media (min-width: 850px){
+    .main_portafolio{
+        width: 800px;
+    }
+    .cajon{
+        display: flex;
+    }
+    .p_pantallasos{
+        width: 50%;
+    }
+        
+
+    
+
 }
