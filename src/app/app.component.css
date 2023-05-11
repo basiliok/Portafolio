@@ -1,9 +1,10 @@
 /* si es clase [.] si es una etiqueta de html & */
 .main_portafolio{
     width: 100%;
-    padding: 35px;
+    padding: 35px 35px 17px;
     margin: 80px auto 0;
 }
+
 .superior{
     .saludo{
         .saludo_inicial{
@@ -13,42 +14,110 @@
             font-weight: 500;
         }
         .nombre{
-            font-size: clamp(2.5rem, 4.5vw, 5rem);
+            font-size: clamp(2.5rem, 3vw, 4rem);
             font-weight: 600;
-            margin-bottom: 0;
         }
-        .titulo{
-            font-size: clamp(1.5rem, 2.5vw, 2rem);
-            font-weight: 600;
+    }
+    .descripcion{
+        & span{
+            color: var(--verde);
         }
     }
 }
 
-.descripcion{
-    & span{
-        color: var(--verde);
-    }
+.skill_borde_main{
+    border: solid 1px rgba(255,255,255,0.1);
+}
+.borde_kevin{
+    border: solid 1px rgba(255,255,255,0.1);
+    border-radius: 999em 999em 999em 999em;
+    padding: 2px 10px;
+    margin: 0px 10px 8px 0px;
+    background-color: rgba(255,255,255,0.1);
+    color: var(--verde);
 }
 
 .proyectos{
+    .linea{
+        width: 40px;
+        height: 1px;
+        margin-right: 17px;
+        border-bottom: solid 1px var(--text-opaco);
+    }
     .cajon{
+        color: var(--text-opaco);
         background-color: rgba(255,255,255,0.05);
         border-radius: 4px;
         border-top: 1px solid rgba(255,255,255,0.1);
         /*box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.05);*/
         opacity: 1;
-    }
+        .p_titulo{
+            color: var(--blanco);
+        }
+        .icon_link{
+            width: 23px;
+            fill: var(--text-opaco);
+        }
+        .icon_link:hover{
+            fill: var(--verde);
+            cursor: pointer;
+        }
+        .icon{
+            width: 23px;
+            fill: var(--text-opaco);
+        }
 
+    }
     & img{
         width: 100%;
         height: 100%;
         object-fit: contain;
     }
-    .tecnologias{
-        color: var(--verde);
-    }
 }
 
+.git{
+    width: 35px;
+    fill: var(--text-opaco);
+    animation: meneo 1s 0.5s linear infinite;
+    transition: 0.5s;
+    position: relative;
+}
+.git:hover{
+    fill: var(--verde);
+    cursor: pointer;
+    top: -3px;
+}
+.git_mensaje{
+    color: var(--verde);
+    font-family: var(--font-kevin-mono);
+    font-size: 12px;
+}
+
+
+ 
+@keyframes meneo {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
 
 
 @media (min-width: 650px){
@@ -56,6 +125,7 @@
         width: 600px;
     }
 }
+
 @media (min-width: 850px){
     .main_portafolio{
         width: 800px;
@@ -66,8 +136,4 @@
     .p_pantallasos{
         width: 50%;
     }
-        
-
-    
-
 }
