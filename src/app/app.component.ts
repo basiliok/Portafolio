@@ -16,10 +16,10 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY ESTABA PROGR
   constructor(private renderer: Renderer2){
   }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void { // cuando la vista inicia
   }
-  ngAfterViewInit(): void {
+  
+  ngAfterViewInit(): void { // despues de que la vista se muestre
     this.adelante();
   }
 
