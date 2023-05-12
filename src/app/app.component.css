@@ -1,12 +1,180 @@
-.titulo{
-    width: 200px;
-    margin: 80px auto;
+/* si es clase [.] si es una etiqueta de html & */
+.main_portafolio{
+    width: 100%;
+    padding: 35px 35px 17px;
+    margin: 80px auto 0;
 }
-.frase{
-    width: 200px;
-    margin: auto;
-    text-align: center;
+
+.superior{
+    .saludo{
+        .saludo_inicial{
+            color: var(--verde) ;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        .nombre{
+            font-size: clamp(2.5rem, 3vw, 4rem);
+            font-weight: 600;
+        }
+    }
+    .descripcion{
+        & span{
+            color: var(--verde);
+        }
+    }
 }
-.carita{
-    color: #6db33f;
+
+.skill_borde_main{
+    border: solid 1px rgba(255,255,255,0.1);
+}
+.borde_kevin{
+    border: solid 1px rgba(255,255,255,0.1);
+    border-radius: 999em 999em 999em 999em;
+    padding: 2px 10px;
+    margin: 0px 10px 8px 0px;
+    background-color: rgba(255,255,255,0.1);
+    color: var(--verde);
+}
+
+.proyectos{
+    .linea{
+        width: 40px;
+        height: 1px;
+        margin-right: 17px;
+        border-bottom: solid 1px var(--text-opaco);
+    }
+    .cajon{
+        color: var(--text-opaco);
+        background-color: rgba(255,255,255,0.05);
+        border-radius: 4px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        /*box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.05);*/
+        
+        .p_pantallasos{
+            opacity: 0.5;
+            transition: 0.3s;
+            height: 270px;
+        }
+        .p_pantallasos:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+        .p_titulo{
+            color: var(--blanco);
+        }
+        .tecnologias{
+            color: var(--blanco);
+        }
+        .icon_link{
+            width: 23px;
+            fill: var(--verde);
+        }
+        .icon_link:hover{
+            fill: var(--blanco);
+            cursor: pointer;
+        }
+        .icon{
+            width: 20px;
+            fill: var(--text-opaco);
+        }
+        .icon_muerto{
+            width: 23px;
+            fill: rgba(255, 255, 255, 0.2);
+        }
+    }
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.cajita{
+    position: relative;
+}
+.aligh_center{
+    position: relative;
+    top: 2px;
+}
+
+.git{
+    width: 35px;
+    fill: var(--text-opaco);
+    animation: meneo 1s 0.5s linear infinite;
+    transition: 0.5s;
+    position: relative;
+}
+.git:hover{
+    fill: var(--verde);
+    
+    top: -3px;
+}
+.git_mensaje{
+    color: var(--verde);
+    font-family: var(--font-kevin-mono);
+    font-size: 12px;
+}
+
+.modal{
+    .modal-content {
+        background-color: var(--oscuro) !important;
+        border: solid 1px var(--oscuro2);
+        .modal-header{
+            border-bottom: solid 1px var(--oscuro2);
+            color: var(--verde);
+        }
+    }
+    .img_modal{
+        width: 100%;
+    }
+}
+
+
+
+ 
+@keyframes meneo {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+@media (min-width: 650px){
+    .main_portafolio{
+        width: 600px;
+    }
+}
+
+@media (min-width: 850px){
+    .main_portafolio{
+        width: 800px;
+    }
+    .cajon{
+        display: flex;
+    }
+    .p_pantallasos{
+        width: 50%;
+    }
+    .p_descripcion{
+        width: 50%;
+    }
 }
