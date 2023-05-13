@@ -125,9 +125,93 @@
             color: var(--verde);
         }
     }
-    .img_modal{
-        width: 100%;
+    .modal-body{
+        align-items: center;
     }
+    .img_modal{
+        max-width: 100%; /* si pongo width: 100% le estaria obligando a que llegue al 100% */
+    }
+    .caja_bolas{
+        border: solid 1px var(--oscuro2);
+        margin-left: 30px;
+        border-radius: 999em 999em 999em 999em;
+        display: flex;
+        justify-content: flex-start;
+        padding: 6px;
+        width: 150px;
+        /*transform: translateY(-50%);*/
+        .bola{
+            width: 17px;
+            height: 17px;
+            border: solid 2px var(--verde_original);
+            border-radius: 50%;
+            margin-right: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .bolita{
+                width: 7px;
+                height: 7px;
+                background-color: var(--verde);
+                border-radius: 50%;
+            }
+        }
+    }
+    .caja_flecha_derecha{
+        height: 100%;
+        /*border: solid 1px green;*/
+        position: absolute;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0px;
+        cursor: pointer;
+    }
+    .caja_flecha_derecha:hover{
+        .flecha{
+            background-color: var(--verde);
+        }
+    }
+    .caja_flecha_izquierda:hover{
+        .flecha{
+            background-color: var(--verde);
+        }
+    }
+    .caja_flecha_izquierda{
+        height: 100%;
+        /*border: solid 1px green;*/
+        position: absolute;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0px;
+        cursor: pointer;
+    }
+    .flecha{
+        font-family: monospace;
+        /*border: solid 1px red;*/
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(4px);
+        color: var(--oscuro2);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .flechaDerecha{
+        position: absolute;
+        top: -11px;
+        right: 12px;
+    }
+    .flechaIzquierda{
+        position: absolute;
+        top: -11px;
+        left: 12px;
+    }
+    
 }
 
 
