@@ -9,7 +9,8 @@
     <div class="descripcion">
       <P>Soy desarrollador de software recien egresado. Aunque también me gusta el Frontend actualmente estoy muy interesado en especializarme en el lenguaje de programación <span>Java</span>. Si quieres saber ¿Como soy?, lo podria resumir en que me gusta entender las cosas que hago y prefiero desarrollar algo pequeño que esté bien hecho que algo grande a medias.</P>
     </div>
-  </div>
+  </div><!-- end Superior -->
+
 
   <!-- SKILLS -->
   <div class="skill_borde_main p-3 mt-4">
@@ -58,7 +59,7 @@
       </div>
     </div>
     
-  </div>
+  </div><!-- end Skills -->
 
 
   <!-- PROYECTOS -->
@@ -131,29 +132,31 @@
 
         </div>
       </div> <!-- fin de un cajon -->
-    
-  </div>
+  </div><!-- end Proyectos -->
+
 
   <!-- MODAL -->
-  <!-- Button trigger modal 
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>-->
-
-  <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content">
+
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="staticBackdropLabel">Imagenes</h1>
+          <div #caja_bolas class="caja_bolas">
+            <!-- aca se insertan las bolas y bolitas con TS -->
+          </div>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+
+        <div class="modal-body d-flex justify-content-center"> <!-- espacio de la imagen -->
           <img #modal_img class="img_modal" src="assets/proyectos/proy_01/p11_img01.png" alt="proy_01_img_01">
+          <div class="caja_flecha_derecha" (click)="adelante()"><div class="flecha"><div class="flechaDerecha">&#62;</div></div></div> <!-- ADELANTE -->
+          <div class="caja_flecha_izquierda" (click)="atras()"><div class="flecha"><div class="flechaIzquierda">&#60;</div></div></div> <!-- ATRAS -->
         </div>
+      
       </div>
     </div>
-  </div>
+  </div> <!-- end Modal -->
 
 
   <!-- FOOTER -->
@@ -171,7 +174,7 @@
       <div class="git_mensaje">2023</div>
     </div>
 
-  </div>
+  </div><!-- end Footer -->
 
 
 </div>
