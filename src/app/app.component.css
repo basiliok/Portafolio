@@ -54,7 +54,7 @@
         .p_pantallasos{
             opacity: 0.5;
             transition: 0.3s;
-            height: 270px;
+            height: 260px;
         }
         .p_pantallasos:hover{
             opacity: 1;
@@ -130,6 +130,7 @@
     }
     .img_modal{
         max-width: 100%; /* si pongo width: 100% le estaria obligando a que llegue al 100% */
+        max-height: 750px;
     }
     .caja_bolas{
         border: solid 1px var(--oscuro2);
@@ -138,7 +139,7 @@
         display: flex;
         justify-content: flex-start;
         padding: 6px;
-        width: 150px;
+        width: 200px;
         /*transform: translateY(-50%);*/
         .bola{
             width: 17px;
@@ -254,11 +255,12 @@
     }
     .cajon{
         display: flex;
+        align-items: center;
     }
     .p_pantallasos{
-        width: 50%;
+        width: 40%;
     }
     .p_descripcion{
-        width: 50%;
+        width: 60%;
     }
 }
