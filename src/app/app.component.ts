@@ -19,7 +19,19 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY, ESTABA PROG
   @ViewChild('caja_bolas') cajaBolas: ElementRef; // <---------- MODAL -> Caja de Bolas
 
   proy1: string[] = ["p1_img1.png", "p1_img2.png", "p1_img3.png"];
-  proy11: string[] = ["p11_img1.png", "p11_img2.png"];
+  proy2: string[] = ["p2_img1.png", "p2_img2.png", "p2_img3.png", "p2_img4.png"];
+  proy3: string[] = ["p3_img1.png", "p3_img2.png", "p3_img3.png"];
+  proy4: string[] = ["p4_img1.png", "p4_img2.png", "p4_img3.png"];
+  proy5: string[] = ["p5_img1.png", "p5_img2.png", "p5_img3.png"];
+  proy6: string[] = ["p6_img1.png", "p6_img2.png", "p6_img3.png", "p6_img4.png", "p6_img5.png"];
+  proy7: string[] = ["p7_img1.gif", "p7_img2.png"];
+  proy8: string[] = ["p8_img1.png", "p8_img2.png", "p8_img3.png"];
+  proy9: string[] = ["p9_img1.png", "p9_img2.png", "p9_img3.png", "p9_img4.png", "p9_img5.png", "p9_img6.png", "p9_img7.png", "p9_img8.png"];
+  proy10: string[] = ["p10_img1.jpg", "p10_img2.jpg", "p10_img3.jpg", "p10_img4.jpg", "p10_img5.jpg"];
+  proy11: string[] = ["p11_img1.png", "p11_img2.png", "p11_img3.png"];
+  proy12: string[] = ["p12_img1.png", "p12_img2.png", "p12_img3.png", "p12_img4.png", "p12_img5.png"];
+  proy13: string[] = ["p13_img1.png", "p13_img2.png"];
+  proy14: string[] = ["p14_img1.png", "p14_img2.png"];
   
   proy_imagenes: string[];
   proy_numero: number;
@@ -40,12 +52,35 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY, ESTABA PROG
   openModalGO(numero_proyecto: number):void{ // Identificacion del Proyecto, insercion de "Bolas" y de la primera imagen.
     this.proy_numero = numero_proyecto; // identificamos el numero del proyecto
     switch (numero_proyecto) { // obtenemos el arreglo de imagenes segun el numero del proyecto
-      case 1: 
-        this.proy_imagenes = this.proy1;
+      case 1: this.proy_imagenes = this.proy1;
+        break;
+      case 2: this.proy_imagenes = this.proy2;
+        break;
+      case 3: this.proy_imagenes = this.proy3;
+        break;
+      case 4: this.proy_imagenes = this.proy4;
+        break;
+      case 5: this.proy_imagenes = this.proy5;
+        break;
+      case 6: this.proy_imagenes = this.proy6;
+        break;
+      case 7: this.proy_imagenes = this.proy7;
+        break;
+      case 8: this.proy_imagenes = this.proy8;
+        break;
+      case 9: this.proy_imagenes = this.proy9;
+        break;
+      case 10: this.proy_imagenes = this.proy10;
         break;
       case 11: this.proy_imagenes = this.proy11;
         break;
-      default: this.proy_imagenes = this.proy11;
+      case 12: this.proy_imagenes = this.proy12;
+        break;
+      case 13: this.proy_imagenes = this.proy13;
+        break;
+      case 14: this.proy_imagenes = this.proy14;
+        break;
+      default: this.proy_imagenes = this.proy14;
         break;
     }
     
