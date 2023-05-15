@@ -9,6 +9,6 @@ Tecnologias:
 | ----------- | ----------- |
 | ![][img_1] | ![][img_2] |
 
-[v1]: https://kevinbasilio.tech/Frontend_Exercise_01/
+[v1]: https://kevinbasilio.tech/
 [img_1]: ./src/assets/proyectos/proy_14/p14_img1.png
 [img_2]: ./src/assets/proyectos/proy_14/p14_img2.png
