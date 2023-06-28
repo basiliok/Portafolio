@@ -32,7 +32,8 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY, ESTABA PROG
   proy12: string[] = ["p12_img1.png", "p12_img2.png", "p12_img3.png", "p12_img4.png", "p12_img5.png"];
   proy13: string[] = ["p13_img1.png", "p13_img2.png"];
   proy14: string[] = ["p14_img1.png", "p14_img2.png"];
-  
+  proy15: string[] = ["p15_img1.png", "p15_img2.png", "p15_img3.png", "p15_img4.png"];
+
   proy_imagenes: string[];
   proy_numero: number;
 
@@ -80,7 +81,9 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY, ESTABA PROG
         break;
       case 14: this.proy_imagenes = this.proy14;
         break;
-      default: this.proy_imagenes = this.proy14;
+      case 15: this.proy_imagenes = this.proy15;
+        break;
+      default: this.proy_imagenes = this.proy15;
         break;
     }
     
