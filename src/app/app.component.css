@@ -81,6 +81,7 @@
         .icon_muerto{
             width: 23px;
             fill: rgba(255, 255, 255, 0.2);
+            cursor: default;
         }
         .link{
             text-decoration: none;

@@ -1,0 +1,15 @@
+@media (min-width: 850px){
+    /* .main_portafolio{
+        width: 800px;
+    } */
+    .cajon{
+        display: flex;
+        align-items: center;
+    }
+    .p_pantallasos{
+        width: 40%;
+    }
+    .p_descripcion{
+        width: 60%;
+    }
+}

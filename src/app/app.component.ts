@@ -18,21 +18,21 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY, ESTABA PROG
   @ViewChild('modal_img') modalImagen: ElementRef; // <---------- MODAL -> llamamos al elemento Imagen del HTML
   @ViewChild('caja_bolas') cajaBolas: ElementRef; // <---------- MODAL -> Caja de Bolas
 
-  proy1: string[] = ["p1_img1.png", "p1_img2.png", "p1_img3.png"];
-  proy2: string[] = ["p2_img1.png", "p2_img2.png", "p2_img3.png", "p2_img4.png"];
-  proy3: string[] = ["p3_img1.png", "p3_img2.png", "p3_img3.png"];
-  proy4: string[] = ["p4_img1.png", "p4_img2.png", "p4_img3.png"];
-  proy5: string[] = ["p5_img1.png", "p5_img2.png", "p5_img3.png"];
-  proy6: string[] = ["p6_img1.png", "p6_img2.png", "p6_img3.png", "p6_img4.png", "p6_img5.png"];
-  proy7: string[] = ["p7_img1.gif", "p7_img2.png"];
-  proy8: string[] = ["p8_img1.png", "p8_img2.png", "p8_img3.png"];
-  proy9: string[] = ["p9_img1.png", "p9_img2.png", "p9_img3.png", "p9_img4.png", "p9_img5.png", "p9_img6.png", "p9_img7.png", "p9_img8.png"];
-  proy10: string[] = ["p10_img1.jpg", "p10_img2.jpg", "p10_img3.jpg", "p10_img4.jpg", "p10_img5.jpg"];
-  proy11: string[] = ["p11_img1.png", "p11_img2.png", "p11_img3.png"];
-  proy12: string[] = ["p12_img1.png", "p12_img2.png", "p12_img3.png", "p12_img4.png", "p12_img5.png"];
-  proy13: string[] = ["p13_img1.png", "p13_img2.png"];
-  proy14: string[] = ["p14_img1.png", "p14_img2.png"];
-  proy15: string[] = ["p15_img1.png", "p15_img2.png", "p15_img3.png", "p15_img4.png"];
+  proy1: string[] = ["p1_img1.webp", "p1_img2.webp", "p1_img3.webp"];
+  proy2: string[] = ["p2_img1.webp", "p2_img2.webp", "p2_img3.webp", "p2_img4.webp"];
+  proy3: string[] = ["p3_img1.webp", "p3_img2.webp", "p3_img3.webp"];
+  proy4: string[] = ["p4_img1.webp", "p4_img2.webp", "p4_img3.webp"];
+  proy5: string[] = ["p5_img1.webp", "p5_img2.webp", "p5_img3.webp"];
+  proy6: string[] = ["p6_img1.webp", "p6_img2.webp", "p6_img3.webp", "p6_img4.webp", "p6_img5.webp"];
+  proy7: string[] = ["p7_img1.gif", "p7_img2.webp"];
+  proy8: string[] = ["p8_img1.webp", "p8_img2.webp", "p8_img3.webp"];
+  proy9: string[] = ["p9_img1.webp", "p9_img2.webp", "p9_img3.webp", "p9_img4.webp", "p9_img5.webp", "p9_img6.webp", "p9_img7.webp", "p9_img8.webp"];
+  proy10: string[] = ["p10_img1.webp", "p10_img2.webp", "p10_img3.webp", "p10_img4.webp", "p10_img5.webp"];
+  proy11: string[] = ["p11_img1.webp", "p11_img2.webp", "p11_img3.webp"];
+  proy12: string[] = ["p12_img1.webp", "p12_img2.webp", "p12_img3.webp", "p12_img4.webp", "p12_img5.webp"];
+  proy13: string[] = ["p13_img1.webp", "p13_img2.webp"];
+  proy14: string[] = ["p14_img1.webp", "p14_img2.webp"];
+  proy15: string[] = ["p15_img1.webp", "p15_img2.webp", "p15_img3.webp", "p15_img4.webp"];
 
   proy_imagenes: string[];
   proy_numero: number;
@@ -86,7 +86,6 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY, ESTABA PROG
       default: this.proy_imagenes = this.proy15;
         break;
     }
-    
     // insertamos el numero de "bolas" dependiendo del numero de imagenes que tiene el proyecto e insertamos la 1era "bolita" interior
     this.addBolas();
     this.changeBolita(0); // al inicio coloca la bolita en la 1era pocision.
@@ -108,7 +107,7 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY, ESTABA PROG
 
 
   addBolas(): void{ // AÑADIMOS LAS BOLITAS AL MODAL DEPENDIENDO DEL NUMERO DE IMAGENES
-    console.log('--------------------------')
+    console.log('------------------')
     console.log('Numero del Proyecto: ' + this.proy_numero);
     console.log('Cantidad de Imagenes: ' + this.proy_imagenes.length)
     for (let i = 0; i < this.proy_imagenes.length; i++) {
