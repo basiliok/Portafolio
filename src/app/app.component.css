@@ -6,6 +6,7 @@
 }
 
 .superior{
+    max-width: 500px;
     .saludo{
         .saludo_inicial{
             color: var(--verde) ;
@@ -173,7 +174,6 @@
     
 }
 
-
 @keyframes meneo {
   0%, 7% {
     transform: rotateZ(0);
@@ -209,14 +209,4 @@
     .main_portafolio{
         width: 800px;
     }
-    /* .cajon{
-        display: flex;
-        align-items: center;
-    }
-    .p_pantallasos{
-        width: 40%;
-    }
-    .p_descripcion{
-        width: 60%;
-    } */
 }
