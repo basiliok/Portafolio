@@ -49,9 +49,6 @@ img{
 
 
 @media (min-width: 850px){
-    /* .main_portafolio{
-        width: 800px;
-    } */
     .cajon{
         display: flex;
         align-items: center;
