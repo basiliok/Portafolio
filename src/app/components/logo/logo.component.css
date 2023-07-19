@@ -14,7 +14,7 @@
 @keyframes changeColor {
     0%{ fill:var(--verde);}
     65%{ fill:var(--verde);}
-    100%{ fill: #4B5345;}
+    100%{ fill: var(--text-opaco);}
 }
 
 .m_vector { /* afecta a los tres vectores del logo que se usan como mascara */
@@ -54,6 +54,6 @@
 
 @media (min-width: 850px){
     #logo_principal{
-        left: 60px;
+        left: 70px;
     }
 }
