@@ -6,7 +6,7 @@
 }
 
 .superior{
-    max-width: 500px;
+    max-width: 600px;
     .saludo{
         .saludo_inicial{
             color: var(--verde) ;
@@ -45,8 +45,6 @@
         margin-right: 17px;
         border-bottom: solid 1px var(--text-opaco);
     }
-
-    
 }
 
 .cajita{
@@ -57,6 +55,40 @@
     top: 2px;
 }
 
+.contacto { /* correo y github */
+    font-family: var(--font-kevin-mono);
+    letter-spacing: 1px;
+    position: absolute;
+    transition: 0.5s;
+    top: 37px;
+    right: 30px;
+
+    .icon_git_mini{
+        width: 20px;
+        fill: var(--text-opaco);
+        transition: 0.3s;
+    }
+    .icon_email{
+        width: 20px;
+        fill: var(--text-opaco);
+    }
+    .txt_git_mini{
+        text-decoration: none;
+        color: var(--text-opaco);
+        transition: 0.3s;
+    }
+    .txt_icon_email{
+        color: var(--text-opaco);
+    }
+    .icon_git_mini:hover{
+        fill: var(--blanco);
+    }
+    .txt_git_mini:hover{
+        color: var(--blanco);
+    }
+}
+
+
 .git{
     width: 35px;
     fill: var(--text-opaco);
@@ -66,7 +98,6 @@
 }
 .git:hover{
     fill: var(--verde);
-    
     top: -3px;
 }
 .git_mensaje{
@@ -208,5 +239,8 @@
 @media (min-width: 850px){
     .main_portafolio{
         width: 800px;
+    }
+    .contacto{
+        right: 70px;
     }
 }
