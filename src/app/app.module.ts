@@ -7,9 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { NgOptimizedImage } from '@angular/common';
 import { LogoComponent } from './components/logo/logo.component';
+import { TecnologiaComponent } from './components/tecnologia/tecnologia.component';
 
 @NgModule({
-  declarations: [AppComponent, ProyectoComponent, LogoComponent],
+  declarations: [AppComponent, ProyectoComponent, LogoComponent, TecnologiaComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, NgOptimizedImage], // <-- 1. Optimizacion de imagenes
   providers: [],
   bootstrap: [AppComponent]
