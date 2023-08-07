@@ -3,6 +3,7 @@
     background-color: rgba(255,255,255,0.05);
     border-radius: 4px;
     border-top: 1px solid rgba(255,255,255,0.1);
+    transition: 1s;
     /*box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.05);*/
     
     .p_pantallasos{
@@ -29,7 +30,7 @@
         cursor: pointer;
     }
     .icon{
-        width: 20px;
+        height: 22px;
         fill: var(--text-opaco);
     }
     .icon_muerto{
@@ -39,6 +40,10 @@
     }
     .link{
         text-decoration: none;
+    }
+    .texto{
+        position: relative;
+        top: 1px;
     }
 }
 img{
@@ -52,7 +57,7 @@ img:hover{
 }
 
 
-@media (min-width: 850px){
+@media (min-width: 950px){
     .cajon{
         display: flex;
         align-items: center;
