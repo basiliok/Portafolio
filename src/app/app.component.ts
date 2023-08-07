@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -166,6 +166,25 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY, ESTABA PROG
     this.changeBolita(this.x); // coloca la bolita en la pocision x
     this.deleteBolitaAnterior(this.x); // elimina la bolita de la pocision 
   }
+
+
+  // ----- SCROLL Y 
+
+  @ViewChild('scrollBtn') scrollBtn: ElementRef;
+
+  @HostListener('window:scroll', []) // donde se aplica el evento:el tipo de evento - parametros del evento)
+  onScroll(): void { // funcion que se ejecuta cuando detecta que estamos ejecutando el evento, cuando hacemos scroll aparece el booton
+    if (window.scrollY > 300) {
+      this.scrollBtn.nativeElement.style.display = 'block';
+    } else {
+      this.scrollBtn.nativeElement.style.display = 'none';
+    }
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
 
 }
 
