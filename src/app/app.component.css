@@ -236,9 +236,9 @@
     }
 }
 
-@media (min-width: 850px){
+@media (min-width: 950px){
     .main_portafolio{
-        width: 800px;
+        width: 900px;
     }
     .contacto{
         right: 70px;
