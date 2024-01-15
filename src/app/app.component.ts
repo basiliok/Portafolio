@@ -34,7 +34,8 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY, ESTABA PROG
   proy14: string[] = ["p14_img1.webp", "p14_img2.webp"];
   proy15: string[] = ["p15_img1.webp", "p15_img2.webp", "p15_img3.webp", "p15_img4.webp"];
   proy16: string[] = ["p16_img1.webp"];
-  proy17: string[] = ["p17_img1.webp", "p17_img2.webp", "p17_img3.webp", "p17_img4.webp", "p17_img5.webp", "p17_img10.webp"];
+  proy17: string[] = ["p17_img1.webp", "p17_img2.webp", "p17_img3.webp", "p17_img4.webp", "p17_img5.webp", "p17_img6.webp"];
+  proy18: string[] = ["p18_img1.webp", "p18_img2.webp", "p18_img3.webp", "p18_img4.webp", "p18_img5.webp", "p18_img6.webp"];
 
   proy_imagenes: string[];
   proy_numero: number;
@@ -89,7 +90,9 @@ export class AppComponent implements OnInit { // QUE MONGOL QUE SOY, ESTABA PROG
         break;
       case 17: this.proy_imagenes = this.proy17;
         break;
-      default: this.proy_imagenes = this.proy15;
+      case 18: this.proy_imagenes = this.proy18;
+        break;
+      default: this.proy_imagenes = this.proy18;
         break;
     }
     // insertamos el numero de "bolas" dependiendo del numero de imagenes que tiene el proyecto e insertamos la 1era "bolita" interior
