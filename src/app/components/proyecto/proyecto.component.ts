@@ -38,7 +38,7 @@ export class ProyectoComponent implements OnInit, AfterViewInit{
       this.renderer.setAttribute(this.elemento_ojo.nativeElement, 'class', 'icon_muerto');
       this.renderer.removeAttribute(this.elemento_preview.nativeElement, 'href');
       //this.renderer.removeAttribute(this.elemento_code.nativeElement, 'href');
-    }    
+    }
   }
 
   emitirNumeroProy(): void{ // output : 2
