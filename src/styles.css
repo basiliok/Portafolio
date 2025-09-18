@@ -1,17 +1,16 @@
-:root{
-    --font-kevin: 'Calibre','Inter','San Francisco','SF Pro Text', sans-serif;
-    --font-kevin-mono: 'SF Mono','Fira Code','Fira Mono','Roboto Mono', monospace;
+:root {
+    --font-kevin: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', sans-serif;
+    --font-kevin-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     --blanco: #ccd6f6;
     --verde: #82d649;
-    --verde-muerto: #7E784D;
+    --verde-muerto: #7e784d;
     --verde_original: #6db33f;
     --oscuro: #1b1f23;
-    --oscuro2: #383C45;
+    --oscuro2: #383c45;
     --text-opaco: rgb(148 163 184);
 }
 
-body{
-    /*background-color: rgb(15, 23, 42);*/
+body {
     font-family: var(--font-kevin);
     font-size: 15px;
     color: var(--blanco);
@@ -21,4 +20,3 @@ body{
     padding: 0;
     margin: 0;
 }
-

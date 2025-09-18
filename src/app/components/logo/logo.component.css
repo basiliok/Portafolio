@@ -1,6 +1,5 @@
-#logo_principal{
-    height: 60px;/*
-    position: fixed;*/
+#logo_principal {
+    height: 60px;
     position: absolute;
     transition: 0.5s;
     top: 30px;
@@ -8,52 +7,77 @@
 }
 #logo_kb {
     fill: var(--verde);
-    stroke: none;/* sin borde */
+    /* sin borde */
+    stroke: none;
     animation: changeColor 3.2s forwards;
 }
 @keyframes changeColor {
-    0%{ fill:var(--verde);}
-    65%{ fill:var(--verde);}
-    100%{ fill: var(--text-opaco);}
+    0% {
+        fill: var(--verde);
+    }
+    65% {
+        fill: var(--verde);
+    }
+    100% {
+        fill: var(--text-opaco);
+    }
 }
 
-.m_vector { /* afecta a los tres vectores del logo que se usan como mascara */
+/* afecta a los tres vectores del logo que se usan como mascara */
+.m_vector {
     stroke: white;
     stroke-width: 4.1;
 }
 
-#m_vector1 { /* B */
+/* B */
+#m_vector1 {
     height: 60px;
     stroke-dasharray: 70 70;
     stroke-dashoffset: 70;
-    animation: trazo 1.2s .7s ease forwards;/*forwards*/
+    animation: trazo 1.2s 0.7s ease forwards;
 }
-#m_vector2 { /* K */
+/* K */
+#m_vector2 {
     stroke-dasharray: 55;
     stroke-dashoffset: 55;
-    animation: trazo2 .7s .7s ease forwards;/*forwards*/
+    animation: trazo2 0.7s 0.7s ease forwards;
 }
-#m_vector3 { /* Contorno */
+/* Contorno */
+#m_vector3 {
     stroke-dasharray: 190;
     stroke-dashoffset: 190;
-    animation: trazo3 2.5s ease forwards;/*forwards*/
+    animation: trazo3 2.5s ease forwards;
 }
 @keyframes trazo {
-    0%{ stroke-dashoffset: 70;}
-    100%{ stroke-dashoffset: 0;}
+    0% {
+        stroke-dashoffset: 70;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
 }
 @keyframes trazo2 {
-    0%{ stroke-dashoffset: 55;}
-    100%{ stroke-dashoffset: 0;}
+    0% {
+        stroke-dashoffset: 55;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
 }
 @keyframes trazo3 {
-    0%{ stroke-dashoffset: 190;}
-    45%{ stroke-dashoffset: 190;}
-    100%{ stroke-dashoffset: 0;}
+    0% {
+        stroke-dashoffset: 190;
+    }
+    45% {
+        stroke-dashoffset: 190;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
 }
 
-@media (min-width: 850px){
-    #logo_principal{
+@media (min-width: 850px) {
+    #logo_principal {
         left: 70px;
     }
 }

@@ -1,69 +1,70 @@
 /* si es clase [.] si es una etiqueta de html & */
-.main_portafolio{
+.main_portafolio {
     width: 100%;
     padding: 65px 35px 17px;
     margin: 80px auto 0;
 }
 
-.superior{
+.superior {
     max-width: 600px;
-    .saludo{
-        .saludo_inicial{
-            color: var(--verde) ;
+    .saludo {
+        .saludo_inicial {
+            color: var(--verde);
             word-spacing: 1px;
             letter-spacing: 1px;
             font-weight: 500;
         }
-        .nombre{
+        .nombre {
             font-size: clamp(2.5rem, 3vw, 4rem);
             font-weight: 600;
         }
     }
-    .descripcion{
-        & span{
+    .descripcion {
+        & span {
             color: var(--verde);
         }
     }
 }
 
-.skill_borde_main{
-    border: solid 1px rgba(255,255,255,0.1);
+.skill_borde_main {
+    border: solid 1px rgba(255, 255, 255, 0.1);
 }
-.borde_kevin{
-    border: solid 1px rgba(255,255,255,0.1);
+.borde_kevin {
+    border: solid 1px rgba(255, 255, 255, 0.1);
     border-radius: 999em 999em 999em 999em;
     padding: 2px 10px;
     margin: 0px 10px 8px 0px;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     color: var(--verde);
 }
 
-.proyectos{
-    .linea{
-        width: 100px;
+.proyectos {
+    .linea {
+        width: 50px;
         height: 1px;
         margin-right: 17px;
         border-bottom: solid 1px var(--text-opaco);
     }
-    .icon_book{
+    .icon_book {
         width: 40px;
-        fill: var(--text-opaco);
+        fill: var(--blanco);
     }
-    .icon_rocket{
+    .icon_rocket {
         width: 40px;
-        fill: var(--text-opaco);
+        fill: var(--blanco);
     }
 }
 
-.cajita{
+.cajita {
     position: relative;
 }
-.aligh_center{
+.aligh_center {
     position: relative;
     top: 2px;
 }
 
-.contacto { /* correo y github */
+/* correo y github */
+.contacto {
     font-family: var(--font-kevin-mono);
     letter-spacing: 1px;
     position: absolute;
@@ -71,74 +72,74 @@
     top: 37px;
     right: 30px;
 
-    .icon_email{
+    .icon_email {
         width: 28px;
         fill: var(--text-opaco);
     }
-    .icon_linkedin_mini{
+    .icon_linkedin_mini {
         width: 28px;
         fill: var(--text-opaco);
         transition: 0.3s;
     }
-    .icon_linkedin_mini:hover{
+    .icon_linkedin_mini:hover {
         fill: var(--blanco);
     }
-    .icon_git_mini{
+    .icon_git_mini {
         width: 28px;
         fill: var(--text-opaco);
         transition: 0.3s;
     }
-    .txt_git_mini{
+    .txt_git_mini {
         text-decoration: none;
         color: var(--text-opaco);
         transition: 0.3s;
     }
-    .txt_icon_email{
+    .txt_icon_email {
         color: var(--text-opaco);
     }
-    .icon_git_mini:hover{
+    .icon_git_mini:hover {
         fill: var(--blanco);
     }
-    .txt_git_mini:hover{
+    .txt_git_mini:hover {
         color: var(--blanco);
     }
 }
 
-
-.git{
+.git {
     width: 35px;
     fill: var(--text-opaco);
     animation: meneo 1s 0.5s linear infinite;
     transition: 0.5s;
     position: relative;
 }
-.git:hover{
+.git:hover {
     fill: var(--verde);
     top: -3px;
 }
-.git_mensaje{
+.git_mensaje {
     color: var(--verde);
     font-family: var(--font-kevin-mono);
     font-size: 12px;
 }
 
-.modal{
+.modal {
     .modal-content {
         background-color: var(--oscuro) !important;
         border: solid 1px var(--oscuro2);
-        .modal-header{
+        .modal-header {
             border-bottom: solid 1px var(--oscuro2);
             color: var(--verde);
         }
     }
-    .modal-body{
+    .modal-body {
         align-items: center;
     }
-    .img_modal{
-        max-width: 100%; /* si pongo width: 100% le estaria obligando a que llegue al 100% */
+    .img_modal {
+        /* si pongo width: 100% le estaria obligando a que llegue al 100% */
+        max-width: 100%;
         max-height: 750px;
     }
-    .caja_bolas{
+    .caja_bolas {
         border: solid 1px var(--oscuro2);
         margin-left: 30px;
         border-radius: 999em 999em 999em 999em;
@@ -146,8 +147,7 @@
         justify-content: flex-start;
         padding: 6px;
         width: 200px;
-        /*transform: translateY(-50%);*/
-        .bola{
+        .bola {
             width: 17px;
             height: 17px;
             border: solid 2px var(--verde_original);
@@ -156,7 +156,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            .bolita{
+            .bolita {
                 width: 7px;
                 height: 7px;
                 background-color: var(--verde);
@@ -164,9 +164,8 @@
             }
         }
     }
-    .caja_flecha_derecha{
+    .caja_flecha_derecha {
         height: 100%;
-        /*border: solid 1px green;*/
         position: absolute;
         width: 100px;
         display: flex;
@@ -175,19 +174,18 @@
         right: 0px;
         cursor: pointer;
     }
-    .caja_flecha_derecha:hover{
-        .flecha{
+    .caja_flecha_derecha:hover {
+        .flecha {
             background-color: var(--verde);
         }
     }
-    .caja_flecha_izquierda:hover{
-        .flecha{
+    .caja_flecha_izquierda:hover {
+        .flecha {
             background-color: var(--verde);
         }
     }
-    .caja_flecha_izquierda{
+    .caja_flecha_izquierda {
         height: 100%;
-        /*border: solid 1px green;*/
         position: absolute;
         width: 100px;
         display: flex;
@@ -196,9 +194,8 @@
         left: 0px;
         cursor: pointer;
     }
-    .flecha{
+    .flecha {
         font-family: monospace;
-        /*border: solid 1px red;*/
         background: rgba(255, 255, 255, 0.6);
         backdrop-filter: blur(4px);
         color: var(--oscuro2);
@@ -208,44 +205,45 @@
         font-size: 45px;
         font-weight: bold;
     }
-    .flechaDerecha{
+    .flechaDerecha {
         position: absolute;
         top: -11px;
         right: 12px;
     }
-    .flechaIzquierda{
+    .flechaIzquierda {
         position: absolute;
         top: -11px;
         left: 12px;
     }
-    
 }
 
 @keyframes meneo {
-  0%, 7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-15deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
-  }
-  30% {
-    transform: rotateZ(6deg);
-  }
-  35% {
-    transform: rotateZ(-4deg);
-  }
-  40%, 100% {
-    transform: rotateZ(0);
-  }
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
 }
-
-#scrollBtn { /* --------- SCROLL UP / FLECHA --------- */
+/* --------- SCROLL UP / FLECHA --------- */
+#scrollBtn {
     display: none;
     position: fixed;
     bottom: 35px;
@@ -257,32 +255,31 @@
     height: 50px;
     padding: 10px 10px;
     cursor: pointer;
-    transition: .3s;
-    .arrow{
+    transition: 0.3s;
+    .arrow {
         width: 1.2em;
         fill: var(--oscuro2);
-        transition: .3s;
+        transition: 0.3s;
     }
 }
-#scrollBtn:hover{
+#scrollBtn:hover {
     background-color: rgb(220, 220, 220);
-    .arrow{
+    .arrow {
         fill: var(--oscuro);
     }
 }
 
-
-@media (min-width: 650px){
-    .main_portafolio{
+@media (min-width: 650px) {
+    .main_portafolio {
         width: 600px;
     }
 }
 
-@media (min-width: 950px){
-    .main_portafolio{
+@media (min-width: 950px) {
+    .main_portafolio {
         width: 900px;
     }
-    .contacto{
+    .contacto {
         right: 70px;
     }
 }
