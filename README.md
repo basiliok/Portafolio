@@ -27,3 +27,6 @@ Tecnologias:
 3. Configura tu dominio:
 [Microsoft - Custom Domain External](https://learn.microsoft.com/en-us/azure/static-web-apps/custom-domain-external)
 4. Eliminar proyecto en Firebase, dentro del proyecto entras en configuracion y la remueves.
+5. Agregar Google Analytics:
+    a. Creas un ACCOUNT, luego una PROPERTIE, y luego un STREAM con un nombre (tu app web, movil, etc).
+    b. Te proporcionara un script que tendras que agregar a tu proyecto y listo.
