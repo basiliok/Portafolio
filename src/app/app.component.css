@@ -40,10 +40,18 @@
 
 .proyectos{
     .linea{
-        width: 40px;
+        width: 100px;
         height: 1px;
         margin-right: 17px;
         border-bottom: solid 1px var(--text-opaco);
+    }
+    .icon_book{
+        width: 40px;
+        fill: var(--text-opaco);
+    }
+    .icon_rocket{
+        width: 40px;
+        fill: var(--text-opaco);
     }
 }
 
@@ -63,14 +71,22 @@
     top: 37px;
     right: 30px;
 
-    .icon_git_mini{
-        width: 20px;
+    .icon_email{
+        width: 28px;
+        fill: var(--text-opaco);
+    }
+    .icon_linkedin_mini{
+        width: 28px;
         fill: var(--text-opaco);
         transition: 0.3s;
     }
-    .icon_email{
-        width: 20px;
+    .icon_linkedin_mini:hover{
+        fill: var(--blanco);
+    }
+    .icon_git_mini{
+        width: 28px;
         fill: var(--text-opaco);
+        transition: 0.3s;
     }
     .txt_git_mini{
         text-decoration: none;
