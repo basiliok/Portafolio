@@ -6,7 +6,7 @@
     .fecha_actualizacion {
         color: var(--oscuro2);
         font-family: var(--font-kevin-mono);
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
