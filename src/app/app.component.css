@@ -8,10 +8,15 @@
         font-family: var(--font-kevin-mono);
         font-size: 12px;
     }
+    .linea {
+        width: 50px;
+        height: 1px;
+        margin-right: 17px;
+        border-bottom: solid 1px var(--text-opaco);
+    }
 }
 
-.superior {
-    max-width: 600px;
+.superior_nombre_mensaje {
     .saludo {
         .saludo_inicial {
             color: var(--verde);
@@ -33,6 +38,7 @@
 
 .skill_borde_main {
     border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
 .borde_kevin {
     border: solid 1px rgba(255, 255, 255, 0.1);
@@ -43,20 +49,50 @@
     color: var(--verde);
 }
 
-.proyectos {
-    .linea {
-        width: 50px;
-        height: 1px;
-        margin-right: 17px;
-        border-bottom: solid 1px var(--text-opaco);
+.icon_certificado {
+    width: 30px;
+    fill: var(--blanco);
+}
+.icon_rocket {
+    width: 30px;
+    fill: var(--blanco);
+}
+.icon_book {
+    width: 30px;
+    fill: var(--blanco);
+}
+
+.certificado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.7rem;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    width: fit-content;
+    .certificacion_description {
+        margin-left: 1rem;
+        .titulo {
+            font-weight: 600;
+        }
+        .emisor {
+            color: var(--text-opaco);
+        }
+        .emitido {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: var(--text-opaco);
+        }
     }
-    .icon_book {
-        width: 40px;
-        fill: var(--blanco);
+    .icon_ojo {
+        fill: var(--verde);
+        cursor: pointer;
+        transition: 0.23s;
     }
-    .icon_rocket {
-        width: 40px;
+    .icon_ojo:hover {
         fill: var(--blanco);
+        transform: scale(1.12);
     }
 }
 
@@ -69,9 +105,9 @@
 }
 
 /* correo y github */
-.contacto {
+.superior_contacto {
     font-family: var(--font-kevin-mono);
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     position: absolute;
     transition: 0.5s;
     top: 37px;
