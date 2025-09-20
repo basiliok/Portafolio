@@ -1,7 +1,7 @@
 /* si es clase [.] si es una etiqueta de html & */
 .main_portafolio {
     width: 100%;
-    padding: 65px 35px 17px;
+    padding: 85px 35px 17px;
     margin: 80px auto 0;
     .fecha_actualizacion {
         color: var(--oscuro2);
