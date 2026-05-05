@@ -39,6 +39,7 @@ export class ProyectoComponent implements OnInit, AfterViewInit {
     @Input() duration: string;
     @Input() finish_date: string;
     @Input() background_color: number;
+    @Input() in_development = false;
     @Output() proyectoEvent = new EventEmitter<number>(); // pasos output : 1
 
     updatePreviewAttributes(): void {

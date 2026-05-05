@@ -203,6 +203,27 @@
 
         <app-proyecto
             (proyectoEvent)="openModalGO($event)"
+            [number_proyect]="20"
+            [in_development]="true"
+            [image_start]="'assets/proyectos/proy_20/p20_img3.webp'"
+            [title]="'10. PÁGINA WEB « BLURLINK »'"
+            [description]="'Gestor de enlaces (links).'"
+            [tasks]="[
+                'Diseño responsivo en tema oscuro.',
+                'Autenticación de usuarios (Sign in / Sign up con código de invitación).',
+                'Agrupación de enlaces en grupos personalizados.'
+            ]"
+            [technologies]="'React 19 (TypeScript, Vite, Tailwind, Tanstack Query, Zustand, Axios, Zod), Node.js 22, Azure (Functions, CosmosDB), JWT'"
+            [link_preview]="'https://www.blurlink.com/'"
+            [link_github]="'https://github.com/basiliok/blurlink-fe'"
+            [duration]="'35d'"
+            [finish_date]="'05/2026'"
+            [background_color]="1"
+        >
+        </app-proyecto>
+
+        <app-proyecto
+            (proyectoEvent)="openModalGO($event)"
             [number_proyect]="19"
             [image_start]="'assets/proyectos/proy_19/p19_img3.webp'"
             [title]="'9. PÁGINA WEB « LINKS »'"
