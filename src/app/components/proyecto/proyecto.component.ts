@@ -19,12 +19,15 @@ export class ProyectoComponent implements OnInit, AfterViewInit {
     @ViewChild('ePreview') elemento_preview: ElementRef;
     @ViewChild('eCode') elemento_code: ElementRef;
     @ViewChild('eOjo') elemento_ojo: ElementRef;
+    @ViewChild('eVideoLink') elemento_video_link: ElementRef;
+    @ViewChild('eVideo') elemento_video: ElementRef;
     @ViewChild('eContainer') elemento_container: ElementRef;
 
     constructor(private renderer: Renderer2) {}
     ngOnInit(): void {}
     ngAfterViewInit(): void {
         this.updatePreviewAttributes();
+        this.updateVideoAttributes();
         this.updateBackgroundColor();
     }
 
@@ -35,6 +38,7 @@ export class ProyectoComponent implements OnInit, AfterViewInit {
     @Input() tasks: string[];
     @Input() technologies: string;
     @Input() link_preview: string;
+    @Input() link_video: string;
     @Input() link_github: string;
     @Input() duration: string;
     @Input() finish_date: string;
@@ -46,6 +50,13 @@ export class ProyectoComponent implements OnInit, AfterViewInit {
         if (this.link_preview === undefined) {
             this.renderer.setAttribute(this.elemento_ojo.nativeElement, 'class', 'icon_muerto');
             this.renderer.removeAttribute(this.elemento_preview.nativeElement, 'href');
+        }
+    }
+
+    updateVideoAttributes(): void {
+        if (this.link_video === undefined) {
+            this.renderer.setAttribute(this.elemento_video.nativeElement, 'class', 'icon_video_muerto');
+            this.renderer.removeAttribute(this.elemento_video_link.nativeElement, 'href');
         }
     }
 

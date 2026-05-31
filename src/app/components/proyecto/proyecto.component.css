@@ -72,6 +72,28 @@
         width: 23px;
         fill: rgba(255, 255, 255, 0.2);
     }
+    /* Ícono de video (medidas independientes del ojo/github) */
+    .icon_video {
+        width: 27px;
+        fill: var(--verde);
+        transition: 0.23s;
+    }
+    .icon_video:hover {
+        fill: var(--blanco);
+        cursor: pointer;
+        transform: scale(1.12);
+    }
+    .icon_video_muerto {
+        width: 27px;
+        fill: rgba(255, 255, 255, 0.2);
+    }
+    /* Quita el gap inferior del SVG inline para alinear bien los íconos */
+    .icon_link svg,
+    .icon_muerto svg,
+    .icon_video svg,
+    .icon_video_muerto svg {
+        display: block;
+    }
     .icon_muerto_lock {
         fill: var(--verde-muerto);
         color: var(--verde-muerto);
