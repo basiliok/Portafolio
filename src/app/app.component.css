@@ -38,9 +38,8 @@
     }
 }
 
-.skill_borde_main {
-    border: solid 1px rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
+.skill_categoria {
+    flex: 0 0 140px;
 }
 
 .icon_certificado {
@@ -307,6 +306,12 @@
 @media (min-width: 650px) {
     .main_portafolio {
         width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    .skill_categoria {
+        flex: 0 0 180px;
     }
 }
 
