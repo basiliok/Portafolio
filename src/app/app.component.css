@@ -43,20 +43,24 @@
 }
 
 .icon_certificado {
-    width: 30px;
+    width: 26px;
     fill: var(--blanco);
 }
 .icon_rocket {
-    width: 30px;
+    width: 26px;
     fill: var(--blanco);
 }
 .icon_book {
-    width: 30px;
+    width: 26px;
     fill: var(--blanco);
 }
 .icon_codigo {
-    width: 30px;
+    width: 26px;
     fill: var(--blanco);
+}
+.icon_lapiz {
+    width: 26px;
+    stroke: var(--blanco);
 }
 
 .certificado {
