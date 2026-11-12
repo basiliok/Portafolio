@@ -54,6 +54,10 @@
     width: 30px;
     fill: var(--blanco);
 }
+.icon_codigo {
+    width: 30px;
+    fill: var(--blanco);
+}
 
 .certificado {
     display: flex;
