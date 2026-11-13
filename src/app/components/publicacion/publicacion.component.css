@@ -15,12 +15,18 @@
         width: 100%;
         border-radius: 4px;
     }
+    .panel_portada {
+        position: absolute;
+        inset: 0;
+        border-radius: 4px;
+        background-color: var(--oscuro);
+        opacity: 0.2;
+    }
     .icon_devto {
         position: absolute;
         left: 8px;
         bottom: 8px;
         width: 32px;
-        height: 22px;
     }
     .titulo {
         font-weight: 600;
